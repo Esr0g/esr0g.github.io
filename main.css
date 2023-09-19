@@ -1,10 +1,16 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf") format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inconsolata", Arial, sans-serif;
 }
 
 html {
-    height: 100%;
+    height: 400%;
     width: 100%;
 }
 
@@ -15,11 +21,17 @@ body {
 
 a {
     text-decoration: none;
+    color: #76CDCD;
+    font-size: 1.6em;
 }
 
 nav {
-    padding: 5px;
-    border: solid;
+    background-color: #26474E;
+    border: 1px solid #26474E;
+    color: #76CDCD;
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -34,29 +46,37 @@ nav ul li {
     margin: 5px;
 }
 
-.about {
+#about {
     background-color: #26474E;
+    border: 1px solid #26474E;
     color:#76CDCD;
-    text-align: center;
-    margin: auto;
-    height: 100%;
+    height: 25%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.projets {
+#about div {
+    border: solid;
+    width: 90%;
+    height: 70%;
+}
+
+#projets {
     background-color:#F27438; 
-    height: 100%;
+    height: 25%;
     width: 100%;
 }
 
-.exp {
+#exp {
     background-color:#F9968B;
-    height: 100%;
+    height: 25%;
     width: 100%;
 }
 
-.formation {
+#formation {
     background-color:#2CCED2;
-    height: 100%;
+    height: 25%;
     width: 100%;
 }
