@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 5px;
+    border: solid;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.about {
+    background-color: #26474E;
+    color:#76CDCD;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.projets {
+    background-color:#F27438; 
+    height: 100%;
+    width: 100%;
+}
+
+.exp {
+    background-color:#F9968B;
+    height: 100%;
+    width: 100%;
+}
+
+.formation {
+    background-color:#2CCED2;
+    height: 100%;
+    width: 100%;
+}
