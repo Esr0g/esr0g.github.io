@@ -7,76 +7,115 @@
     margin: 0;
     padding: 0;
     font-family: "Inconsolata", Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 html {
-    height: 400%;
     width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -100;
 }
 
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -99;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: #76CDCD;
+    color: #000;
     font-size: 1.6em;
+    display: block;
 }
 
 nav {
-    background-color: #26474E;
-    border: 1px solid #26474E;
-    color: #76CDCD;
+    position: relative;
     padding: 10px;
-    position: sticky;
-    top: 0;
+    background: #fff;
+    mix-blend-mode: difference;
+    z-index: 10;
 }
 
 nav ul {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     column-gap: 20px;
 }
 
 nav ul li {
+    display: block;
+    position: relative;
     list-style-type: none;
     text-decoration: none;
     margin: 5px;
 }
 
-#about {
-    background-color: #26474E;
-    border: 1px solid #26474E;
-    color:#76CDCD;
-    height: 25%;
-    width: 100%;
+#about, #projets, #exp, #formation {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-#about div {
+#about {
+    background: #fff;
+    color: #000; 
+}
+
+
+.content {
     border: solid;
-    width: 90%;
-    height: 70%;
+    width: 80%;
+    height: 65%;
 }
 
 #projets {
-    background-color:#F27438; 
-    height: 25%;
-    width: 100%;
+    background:#000; 
+    color: #fff;
 }
 
 #exp {
-    background-color:#F9968B;
-    height: 25%;
-    width: 100%;
+    background:#fff;
+    color: #000;
 }
 
 #formation {
-    background-color:#2CCED2;
-    height: 25%;
-    width: 100%;
+    background:#000;
+    color: #fff;
+}
+
+.section-title {
+    color: #fff;
+    position: absolute;
+    top:-60px;
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+#retour-haut {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    mix-blend-mode: difference;
+    transition: transform 200ms ease-in-out;
+}
+
+#retour-haut:hover {
+    transform: scale(1.2);
+    transition: transform 250ms ease-in-out;
+}
+
+#test {
+    display: block;
+    border: 4px solid red;
 }
